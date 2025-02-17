@@ -12,7 +12,7 @@ const About = () => {
   ];
 
   return (
-    <main className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-[200px] "> 
+    <main className="min-h-screen relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 py-[200px] ">
       <Header />
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -24,16 +24,16 @@ const About = () => {
             <div className="text-lg md:text-xl space-y-6">
               <TypeAnimation
                 sequence={[
-                  `I'm a full-stack developer with 2+ years of experience building digital products. My passion lies in creating efficient, scalable solutions that deliver exceptional user experiences.`,
+                  "I'm a full-stack developer with 2+ years of experience building digital products. My passion lies in creating efficient, scalable solutions that deliver exceptional user experiences.",
                   1000,
                 ]}
                 wrapper="p"
                 cursor
                 className="text-gray-300 leading-relaxed"
               />
-              
+
               <p className="text-gray-300 leading-relaxed">
-                I specialize in modern web development with expertise across the entire stack. When I'm not coding, you'll find me contributing to open-source projects, experimenting with new technologies, or mentoring junior developers.
+                I specialize in modern web development with expertise across the entire stack. When I&apos;m not coding, you&apos;ll find me contributing to open-source projects, experimenting with new technologies, or mentoring junior developers.
               </p>
             </div>
 
@@ -53,8 +53,8 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-4 relative z-10">
-            {skills.map((skill, index) => (
-              <div 
+            {skills.map((skill) => (
+              <div
                 key={skill.name}
                 className="group p-6 bg-gray-800/50 rounded-xl backdrop-blur-sm border border-gray-700 hover:border-purple-400 transition-all duration-300"
               >
@@ -62,7 +62,7 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-white mb-3">{skill.name}</h3>
                 <ul className="space-y-2">
                   {skill.tech.map((tech) => (
-                    <li 
+                    <li
                       key={tech}
                       className="text-gray-300 text-sm before:content-['▹'] before:text-blue-400 before:mr-2"
                     >

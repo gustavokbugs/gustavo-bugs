@@ -2,7 +2,7 @@
 "use client";
 import { EnvelopeIcon, LinkIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import { useForm } from 'react-hook-form';
+import { FieldValues, useForm } from 'react-hook-form';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import Header from '../components/Header';
@@ -11,7 +11,7 @@ const Contact = () => {
 	const { register, handleSubmit } = useForm();
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
-	const onSubmit = async (data: any) => {
+	const onSubmit = async (data: FieldValues) => {
 		setIsSubmitting(true);
 		try {
 			const response = await fetch('/api/send', {
@@ -154,11 +154,11 @@ const Contact = () => {
 						</div>
 
 						<div className="p-8 bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl">
-							<h3 className="text-xl font-semibold text-white mb-4">Let's Build Together</h3>
+							<h3 className="text-xl font-semibold text-white mb-4">Let&apos;s Build Together</h3>
 							<p className="text-gray-300 leading-relaxed">
 								Whether you have a project in mind, want to collaborate,
 								or just want to chat about tech - feel free to reach out.
-								I'm always open to new opportunities and interesting ideas!
+								I&apos;m always open to new opportunities and interesting ideas!
 							</p>
 						</div>
 					</motion.div>
