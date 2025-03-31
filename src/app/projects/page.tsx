@@ -10,14 +10,15 @@ const projects = [
     description: "Simple and practical app that facilitates account splitting after playing poker :)",
     tech: ["React", "TypeScript", "React Native"],
     github: "https://github.com/gustavokbugs/poker-debt-facilitator",
+    deploy: "https://poker-debt-split.expo.app/"
   },
-//   {
-//     title: "Task Management App",
-//     description: "Real-time collaborative task management system",
-//     tech: ["React", "Firebase", "Tailwind", "WebSockets"],
-//     github: "https://github.com/yourusername/task-app",
-//     deploy: "https://tasks.example.com"
-//   },
+  {
+    title: "CRUD w/ Go and React",
+    description: "Simple CRUD application using Go and React.",
+    tech: ["React", "Go", "TypeScript"],
+    github: "https://github.com/gustavokbugs/crud-go-react",
+    deploy: ""
+  },
 ];
 
 const Projects = () => {
@@ -50,7 +51,7 @@ const Projects = () => {
                     >
                       <ArrowTopRightOnSquareIcon className="w-5 h-5" />
                     </a>
-                    {/* <a
+                    <a
                       href={project.deploy}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -70,7 +71,7 @@ const Projects = () => {
                           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                         />
                       </svg>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
 

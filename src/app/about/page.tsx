@@ -7,7 +7,7 @@ const About = () => {
   const skills = [
     { name: 'Frontend', icon: PaintBrushIcon, tech: ['React', 'TypeScript', 'Next.js', 'Tailwind'] },
     { name: 'Backend', icon: CpuChipIcon, tech: ['Node.js', 'Go', 'Java', 'PostgreSQL'] },
-    { name: 'DevOps', icon: CloudIcon, tech: ['AWS', 'Docker', 'Kubernetes', 'CI/CD'] },
+    { name: 'DevOps', icon: CloudIcon, tech: ['Kafka', 'Docker', 'Kubernetes', 'CI/CD'] },
     { name: 'Other', icon: CommandLineIcon, tech: ['Git', 'Linux', 'REST APIs', 'Testing'] },
   ];
 
